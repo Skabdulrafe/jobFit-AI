@@ -29,10 +29,28 @@
 //   },
 //   plugins: [],
 // }
-import { defineConfig } from "tailwindcss";
+// import { defineConfig } from "tailwindcss";
 
-export default defineConfig({
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
-  theme: { extend: {} },
-  plugins: [],
-});
+// export default defineConfig({
+//   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+//   theme: { extend: {} },
+//   plugins: [],
+// });
+
+// module.exports = {
+//   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+//   theme: { extend: {} },
+//   plugins: []
+// };
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}"
+  ],
+  theme: {
+    extend: {}
+  },
+  plugins: []
+};
